@@ -10,7 +10,7 @@ $ make
 To view ROM contents:
 
 ```sh
-usage: rom-parser [ROM file]
+$ ./rom-parser [ROM file]
 ```
 
 This program does not have support for reading the ROM from pci-sysfs, please do this manually in advance, ex:
@@ -24,12 +24,12 @@ This program does not have support for reading the ROM from pci-sysfs, please do
 
 Pass the resulting image file as the argument to this program.
 
-To modify ROM conents:
+To modify ROM contents:
 
 ```sh
-usage: rom-fixer [ROM file]
+$ ./rom-fixer [ROM file]
 ```
 
 Obtain ROM as above, program prompts for modifying ROM vendor and device IDs and invalid checksums.
 
-IMPORTANT: rom-fixer will update the ROM file in place.  Make a backup!
+**IMPORTANT:** rom-fixer will update the ROM file in place.  Make a backup!
